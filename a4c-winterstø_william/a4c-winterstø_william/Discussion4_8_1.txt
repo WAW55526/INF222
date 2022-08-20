@@ -1,0 +1,7 @@
+Write a short reflection on the software engineering aspects of this extension in the two
+metalanguages. (I interpret this as discussing things like code quality)
+
+- The extentions was easy to make thanks to good code quality and easy to expand code.
+I just added an extra two lines in the abstract syntax and expanded the eval statement
+with their own evaluation. Both metalanguages are written like this to allow easy expansion
+of new features.

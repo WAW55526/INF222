@@ -1,0 +1,14 @@
+Does your interpreter detect whether a variable has been initialised before it is accessed?
+- No, but every variable should be initialised in addCallStateInputs
+and if there were no value stored "getStoreValue" will return a "U" value and not throw an error.
+
+Does your interpreter detect whether a variable has been declared before it is used?
+- Yes, addCallStateInputs has an if statement that checks this.
+
+Since using a variable that is not declared can will cause an error it was natural to check for this,
+but when i comes to checking if the variable is initialised there were no threat of errors and therefor
+i felt it wasn't needed.
+
+(c) Integrate your extension with the interpreter for procedures.
+- This happens automatically after i have done (a) and (b) since Div and Mod is defined as using Expr
+and therefor work with the interpreter
